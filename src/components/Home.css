@@ -1,0 +1,116 @@
+.EVERYTHING {
+  background-color: black;
+}
+.home {
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #f8d9cb;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.logo {
+  height: auto; 
+  width: auto; 
+  max-width: 55px; 
+  max-height: 55px;
+  padding-right: 10px;
+}
+.email, .password {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.navbar {
+  position: fixed;
+  text-align: center;
+}
+.title, .login {
+  display: inline-block !important;
+  color: white !important;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-bottom: 20%; */
+  padding-bottom: 10%;
+}
+h6 {
+  color: white;
+}
+
+
+.input-text {
+  /* display: block; */
+  /* margin: 0 auto; */
+  color: black;
+  display:inline;
+  height: 10vh;
+  width: 100%;
+  font-size: 20px;
+  font-size: 3vh;
+  padding: 2vh 1.5vw;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  
+}
+
+.input {
+  /* position: fixed; */
+  /* z-index: 1004040; */
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background: white;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5vw;
+}
+.dropdown {
+  padding-left: 10px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+  padding-top: 20px;
+}
+
+.icon-input{
+  /* position: absolute;
+  right: 68%;
+  top: 18.8%; */
+  height: auto; 
+  width: auto; 
+  max-width: 1.5vw; 
+  max-height: 1.5vw;
+}
+
+
+.form-flat {
+  margin-left: 50px !important;
+}
+
+
+
+
+
+
+
+footer {
+  position:relative;
+  background-color: #131212;
+  height: 10vh;
+  padding-top: 3.3vh;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.foot-text {
+  top: 50%;
+  font-size: 2.4vh;
+}
