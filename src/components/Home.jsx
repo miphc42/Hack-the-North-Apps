@@ -35,7 +35,7 @@ function Home() {
 
   const [show, setShow] = useState(false);
 
-  const [dropValue, setDropValue] = useState("");
+  const [is_filtered, setIsFiltered] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -77,15 +77,15 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    if (events.length === 0) {
+    if (events.length === 0 && !is_filtered) {
       let temp = [];
       const_events.forEach(function (data) {
-        // console.log(data)
         if (data.name.includes(input)) {
           temp.push(data);
         }
       });
       setEvents(temp);
+      setIsFiltered(false);
     }
   }, [events]);
   const handleClick = (e) => {
@@ -94,26 +94,23 @@ function Home() {
     } else if (e.key !== "Enter") {
       let id = 0;
       let temp = [];
-      console.log("A");
       // await new Promise(r => setTimeout(r, 500));
       setEvents([]);
-      console.log(events);
     }
   };
 
+  function check_event(event) {
+    return event;
+  }
   const handleSelect = (event) => {
-    setDropValue(event);
+    // setDropValue(event);
     let temp = const_events;
-    temp.sort(function (a, b) {
-      if (a.event_type == event) {
-        return 1;
-      }
-      if (a.event_type != event) {
-        return -1;
-      }
-      return 0;
+    temp = temp.filter((e) => {
+      return e.event_type === event;
     });
-    console.log(temp);
+    if (temp.length === 0) {
+      setIsFiltered(true);
+    }
     setEvents(temp);
   };
 

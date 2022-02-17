@@ -1,23 +1,23 @@
 import "./App.css";
-import React from 'react'
+import React from "react";
 import {
+  HashRouter,
   BrowserRouter as Router,
-  Routes ,
+  Routes,
   Route,
 } from "react-router-dom";
 import Home from "./components/Home";
 import Page from "./components/Page";
-  
+
 function App() {
   return (
-      <Router>
-        <Routes>
-          <Route path='/events/:id' element={<Page key={Date.now()}/>} />
-          <Route exact path="/"  element={<Home/>}/>
-        </Routes>
-      </Router>
-  )
+    <HashRouter>
+      <Routes>
+        <Route path="/events/:id" element={<Page key={Date.now()} />} />
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </HashRouter>
+  );
 }
-  
 
 export default App;
