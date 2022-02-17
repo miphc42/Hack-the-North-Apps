@@ -9,8 +9,6 @@ import  {Link} from "react-router-dom";
 
 function Card(props) {
   let url = ""
-  console.log(props)
-  console.log(props.data.id);
   if (props.data.id % 3 == 0) {
     url = "https://ionicframework.com/img/getting-started/ionic-native-card.png"
   } else if (props.data.id % 3 == 1) {

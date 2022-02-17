@@ -23,7 +23,6 @@ function Page(props) {
         .then(response => response.json())
         .then(data => {
           setEvent(data);
-          console.log(data.related_events)
           setRelatedEvents(data.related_events);
           if (data.speakers[0].profile_pic) {
             setImageUrl(data.speakers[0].profile_pic)
@@ -35,8 +34,6 @@ function Page(props) {
             fetch(`https://api.hackthenorth.com/v3/events/${id}`)
             .then(res => res.json())
             .then(d => {
-              console.log(id)
-              console.log(d.name)
               setRelatedEventNames(relatedEventNames => [...relatedEventNames, d.name])
               })
             });
@@ -51,8 +48,6 @@ function Page(props) {
       {
         relatedEvents.map((id, idx) => {
             let to_page = `/events/${id}`
-            console.log(idx)
-            console.log(imageUrl)
             return (
               <Link key={id} className='link' to={{pathname: to_page}} target=''>
                 <Button variant="outline-success" onClick={() => {setSt(st + 1)}}>
