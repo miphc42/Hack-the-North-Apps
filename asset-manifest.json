@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Hack-the-North-Apps/static/css/main.9000f7c5.css",
-    "main.js": "/Hack-the-North-Apps/static/js/main.838e4951.js",
+    "main.js": "/Hack-the-North-Apps/static/js/main.4acf8e51.js",
     "static/js/787.df8e8f14.chunk.js": "/Hack-the-North-Apps/static/js/787.df8e8f14.chunk.js",
     "static/media/pf.jpg": "/Hack-the-North-Apps/static/media/pf.a9c41cf155d80751b227.jpg",
     "static/media/logo3.png": "/Hack-the-North-Apps/static/media/logo3.87319dab896b6f4af79a.png",
     "index.html": "/Hack-the-North-Apps/index.html",
     "static/media/search-solid.svg": "/Hack-the-North-Apps/static/media/search-solid.7b640bcb34251e930bc6bcc099389fe8.svg",
     "main.9000f7c5.css.map": "/Hack-the-North-Apps/static/css/main.9000f7c5.css.map",
-    "main.838e4951.js.map": "/Hack-the-North-Apps/static/js/main.838e4951.js.map",
+    "main.4acf8e51.js.map": "/Hack-the-North-Apps/static/js/main.4acf8e51.js.map",
     "787.df8e8f14.chunk.js.map": "/Hack-the-North-Apps/static/js/787.df8e8f14.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9000f7c5.css",
-    "static/js/main.838e4951.js"
+    "static/js/main.4acf8e51.js"
   ]
 }
